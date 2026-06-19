@@ -14,8 +14,6 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;}
 body{overflow:hidden;}
-
-/* SPLASH */
 #splash{position:fixed;inset:0;background:var(--bg);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;}
 #splash.hide{display:none;}
 .sp-logo{width:72px;height:72px;background:linear-gradient(135deg,var(--gold),var(--gold-dim));border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#0a0a12;box-shadow:0 8px 40px rgba(201,168,76,.3);}
@@ -23,8 +21,6 @@ body{overflow:hidden;}
 .sp-sub{font-size:11px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
 .spinner{width:26px;height:26px;border:2px solid var(--bdr2);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin-top:6px;}
 @keyframes spin{to{transform:rotate(360deg);}}
-
-/* LOGIN */
 #login{position:fixed;inset:0;background:var(--bg);z-index:500;display:none;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
 #login.show{display:flex;}
 .lc{width:100%;max-width:360px;background:var(--bg2);border:.5px solid var(--bdr2);border-radius:var(--r);padding:28px 24px;}
@@ -37,14 +33,10 @@ body{overflow:hidden;}
 .lbtn{width:100%;padding:13px;background:var(--gold);color:#0a0a12;border:none;border-radius:var(--rs);font-size:15px;font-weight:700;cursor:pointer;margin-top:6px;}
 .lerr{margin-top:10px;padding:9px 12px;background:var(--red-bg);border:.5px solid rgba(224,90,90,.3);border-radius:var(--rs);font-size:13px;color:var(--red);display:none;}
 .lerr.show{display:block;}
-
-/* SHELL */
 #shell{display:none;height:100vh;height:100dvh;}
 #shell.show{display:flex;}
 .sidebar{width:214px;background:var(--bg2);border-right:.5px solid var(--bdr);display:flex;flex-direction:column;flex-shrink:0;}
 .main{flex:1;display:flex;flex-direction:column;overflow:hidden;}
-
-/* SIDEBAR */
 .sb-logo{padding:18px 14px 12px;border-bottom:.5px solid var(--bdr);}
 .sb-mark{display:flex;align-items:center;gap:10px;}
 .sbm{width:32px;height:32px;background:linear-gradient(135deg,var(--gold),var(--gold-dim));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#0a0a12;flex-shrink:0;}
@@ -59,8 +51,6 @@ body{overflow:hidden;}
 .ni.on{background:rgba(201,168,76,.1);color:var(--gold);}
 .ni.on svg{opacity:1;}
 .sb-foot{padding:10px;border-top:.5px solid var(--bdr);font-size:10px;color:var(--text3);text-align:center;}
-
-/* TOPBAR */
 .topbar{background:var(--bg2);border-bottom:.5px solid var(--bdr);padding:12px 22px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;padding-top:calc(12px + env(safe-area-inset-top));}
 .tb-left .tb-title{font-size:16px;font-weight:600;}
 .tb-left .tb-sub{font-size:11px;color:var(--text3);margin-top:1px;}
@@ -73,15 +63,11 @@ body{overflow:hidden;}
 .btn-gold{background:var(--gold);color:#0a0a12;border:none;border-radius:var(--rs);padding:8px 15px;font-size:12px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;}
 .btn-out{background:transparent;color:var(--text2);border:.5px solid var(--bdr2);border-radius:var(--rs);padding:8px 12px;font-size:12px;cursor:pointer;}
 .btn-out:hover{border-color:var(--gold);color:var(--gold);}
-
-/* CONTENT */
 .content{flex:1;overflow-y:auto;padding:22px;padding-bottom:40px;}
 .content::-webkit-scrollbar{width:3px;}
 .content::-webkit-scrollbar-thumb{background:var(--bdr2);}
 .page{display:none;}
 .page.on{display:block;}
-
-/* STAT CARDS */
 .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:22px;}
 .scard{background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);padding:15px;position:relative;overflow:hidden;}
 .scard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
@@ -99,13 +85,9 @@ body{overflow:hidden;}
 .scard.purple .sv{color:var(--purple);}
 .sl{font-size:11px;color:var(--text2);}
 .ssub{font-size:10px;color:var(--text3);margin-top:3px;}
-
-/* SECTION HEADER */
 .sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;}
 .sh-title{font-size:14px;font-weight:600;display:flex;align-items:center;gap:7px;}
 .sh-title span{font-size:11px;color:var(--text3);font-weight:400;}
-
-/* TABLE */
 .tw{background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);overflow:hidden;margin-bottom:18px;}
 .tw table{width:100%;border-collapse:collapse;}
 .tw th{padding:9px 13px;text-align:left;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--text3);background:var(--bg3);border-bottom:.5px solid var(--bdr);}
@@ -113,12 +95,8 @@ body{overflow:hidden;}
 .tw tr:last-child td{border-bottom:none;}
 .tw tr:hover td{background:rgba(255,255,255,.02);}
 .te{text-align:center;padding:36px;color:var(--text3);font-size:13px;}
-
-/* ID BADGE */
 .idb{font-family:monospace;font-size:11px;background:var(--bg4);border:.5px solid var(--bdr2);border-radius:5px;padding:3px 8px;color:var(--gold);cursor:pointer;white-space:nowrap;}
 .idb:hover{background:rgba(201,168,76,.1);}
-
-/* STATUS BADGE */
 .sbdg{font-size:10px;padding:3px 8px;border-radius:20px;font-weight:600;}
 .sbdg-Hot{background:var(--red-bg);color:var(--red);}
 .sbdg-Warm{background:var(--amber-bg);color:var(--amber);}
@@ -128,15 +106,13 @@ body{overflow:hidden;}
 .sbdg-New{background:rgba(201,168,76,.1);color:var(--gold);}
 .sbdg-Active{background:var(--green-bg);color:var(--green);}
 .sbdg-Inactive{background:rgba(90,86,72,.2);color:var(--text3);}
-
-/* FILTER ROW */
+.sbdg-SoldOut{background:rgba(90,86,72,.2);color:var(--text3);}
+.sbdg-ComingSoon{background:var(--amber-bg);color:var(--amber);}
 .fr{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
 .fi{background:var(--bg3);border:.5px solid var(--bdr);border-radius:var(--rs);padding:8px 11px;font-size:13px;color:var(--text);outline:none;min-width:160px;flex:1;}
 .fi::placeholder{color:var(--text3);}
 .fi:focus{border-color:var(--gold);}
 .fsel{background:var(--bg3);border:.5px solid var(--bdr);border-radius:var(--rs);padding:8px 11px;font-size:12px;color:var(--text2);outline:none;cursor:pointer;-webkit-appearance:none;}
-
-/* MODAL */
 .mbg{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:200;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);padding:16px;}
 .mbg.on{display:flex;}
 .modal{background:var(--bg2);border:.5px solid var(--bdr2);border-radius:16px;width:100%;max-width:500px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden;}
@@ -161,8 +137,6 @@ body{overflow:hidden;}
 .pin-hint{font-size:11px;color:var(--text3);margin-top:6px;line-height:1.5;}
 .btn-sv{width:100%;padding:13px;background:var(--gold);color:#0a0a12;border:none;border-radius:var(--rs);font-size:15px;font-weight:700;cursor:pointer;margin-top:6px;}
 .btn-cancel{padding:9px 16px;background:transparent;color:var(--text2);border:.5px solid var(--bdr2);border-radius:var(--rs);font-size:13px;cursor:pointer;}
-
-/* AGENT CARDS */
 .agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-bottom:18px;}
 .acard{background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);padding:15px;cursor:pointer;transition:border-color .15s,transform .1s;}
 .acard:hover{border-color:var(--bdr2);transform:translateY(-1px);}
@@ -174,28 +148,30 @@ body{overflow:hidden;}
 .acst{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;border-top:.5px solid var(--bdr);padding-top:11px;}
 .acsv{font-size:17px;font-weight:700;line-height:1;}
 .acsl{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;}
-
-/* PERF */
 .prog{background:var(--bg4);border-radius:4px;height:5px;overflow:hidden;margin-top:5px;}
 .progb{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--gold-dim),var(--gold));}
-
-/* UPLOAD SECTION */
 .upbox{border:1.5px dashed var(--bdr2);border-radius:var(--r);padding:32px;text-align:center;cursor:pointer;transition:all .2s;margin-bottom:14px;}
 .upbox:hover,.upbox.drag{border-color:var(--gold);background:rgba(201,168,76,.04);}
 .upbox input{display:none;}
-
-/* MOBILE NAV */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:18px;}
+.pcard{background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:border-color .15s,transform .1s;}
+.pcard:hover{border-color:var(--bdr2);transform:translateY(-1px);}
+.pbanner{height:80px;background:linear-gradient(135deg,var(--bg3),var(--bg4));display:flex;align-items:center;justify-content:center;font-size:32px;position:relative;}
+.pbtag{position:absolute;top:8px;left:8px;background:var(--gold);color:#0a0a12;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;}
+.pbody{padding:13px;}
+.pname{font-size:14px;font-weight:700;margin-bottom:2px;}
+.pdev{font-size:11px;color:var(--gold);margin-bottom:6px;}
+.ploc{font-size:11px;color:var(--text2);margin-bottom:8px;}
+.pprice{font-size:14px;font-weight:700;color:var(--gold);}
+.pfoot{display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:.5px solid var(--bdr);}
 .mnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:.5px solid var(--bdr);z-index:100;padding-bottom:env(safe-area-inset-bottom);}
 .mnav-inner{display:flex;}
 .mni{flex:1;display:flex;flex-direction:column;align-items:center;padding:10px 4px 8px;font-size:9px;color:var(--text3);cursor:pointer;gap:3px;}
 .mni.on{color:var(--gold);}
 .mni svg{width:20px;height:20px;}
-
-/* TOAST */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(12px);background:var(--bg4);border:.5px solid var(--bdr2);border-radius:20px;padding:10px 18px;font-size:13px;color:var(--text);opacity:0;transition:all .25s;z-index:500;white-space:nowrap;pointer-events:none;}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
-
-@media(max-width:768px){.sidebar{display:none;}.mnav{display:block;}.content{padding:16px;padding-bottom:80px;}.tb-left .tb-sub{display:none;}.sgrid{grid-template-columns:1fr 1fr;}.agrid{grid-template-columns:1fr;}.fg2{grid-template-columns:1fr;}}
+@media(max-width:768px){.sidebar{display:none;}.mnav{display:block;}.content{padding:16px;padding-bottom:80px;}.tb-left .tb-sub{display:none;}.sgrid{grid-template-columns:1fr 1fr;}.agrid{grid-template-columns:1fr;}.fg2{grid-template-columns:1fr;}.pgrid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -232,6 +208,7 @@ body{overflow:hidden;}
       <div class="sb-sec">Registry</div>
       <div class="ni" onclick="goPage('agents',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Agents & ARMs</div>
       <div class="ni" onclick="goPage('leads',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>All Leads</div>
+      <div class="ni" onclick="goPage('props',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Properties</div>
       <div class="ni" onclick="goPage('upload',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>Upload to Agent</div>
       <div class="sb-sec">Reports</div>
       <div class="ni" onclick="goPage('perf',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Performance</div>
@@ -255,7 +232,6 @@ body{overflow:hidden;}
     </div>
     <div class="content">
 
-      <!-- DASHBOARD -->
       <div class="page on" id="page-dash">
         <div class="sgrid" id="d-stats"></div>
         <div class="fg2">
@@ -270,7 +246,6 @@ body{overflow:hidden;}
         </div>
       </div>
 
-      <!-- AGENTS -->
       <div class="page" id="page-agents">
         <div class="fr">
           <input class="fi" id="a-srch" placeholder="Search agents..." oninput="renderAgents()">
@@ -279,7 +254,6 @@ body{overflow:hidden;}
         <div class="agrid" id="agent-grid"></div>
       </div>
 
-      <!-- ALL LEADS -->
       <div class="page" id="page-leads">
         <div class="fr">
           <input class="fi" id="l-srch" placeholder="Search leads by name, phone, ID..." oninput="renderAllLeads()">
@@ -289,14 +263,20 @@ body{overflow:hidden;}
         <div class="tw"><table><thead><tr><th>Lead ID</th><th>Name</th><th>Phone</th><th>Agent</th><th>Status</th><th>Follow-up</th><th>Actions</th></tr></thead><tbody id="all-leads"></tbody></table></div>
       </div>
 
-      <!-- UPLOAD TO AGENT -->
+      <!-- PROPERTIES PAGE -->
+      <div class="page" id="page-props">
+        <div class="fr">
+          <input class="fi" id="p-srch" placeholder="Search properties by name, location..." oninput="renderProperties()">
+          <select class="fsel" id="p-tf" onchange="renderProperties()"><option value="">All Types</option><option>Residential</option><option>Commercial</option><option>Villa</option><option>Plot</option><option>Studio</option></select>
+        </div>
+        <div class="pgrid" id="prop-grid"></div>
+      </div>
+
       <div class="page" id="page-upload">
         <div style="background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);padding:20px;margin-bottom:16px;">
           <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Upload CSV Leads to Agent</div>
-          <div style="font-size:12px;color:var(--text3);margin-bottom:16px;">Upload a CSV file and assign all leads to a specific agent. They'll appear instantly in the agent's Field CRM on any device.</div>
-          <div class="fg"><label>Select Agent *</label>
-            <select class="fsel" id="up-agent" style="width:100%;padding:10px 13px;"><option value="">-- Choose Agent --</option></select>
-          </div>
+          <div style="font-size:12px;color:var(--text3);margin-bottom:16px;">Upload a CSV file and assign all leads to a specific agent. They appear instantly in the agent's Field CRM on any device.</div>
+          <div class="fg"><label>Select Agent *</label><select class="fsel" id="up-agent" style="width:100%;padding:10px 13px;"><option value="">-- Choose Agent --</option></select></div>
           <div class="upbox" id="upbox" onclick="document.getElementById('up-file').click()" ondragover="upDragOver(event)" ondragleave="upDragLeave(event)" ondrop="upDrop(event)">
             <input type="file" id="up-file" accept=".csv,.txt" onchange="upHandleFile(event)">
             <div style="font-size:32px;margin-bottom:10px">📂</div>
@@ -326,13 +306,11 @@ body{overflow:hidden;}
         </div>
       </div>
 
-      <!-- PERFORMANCE -->
       <div class="page" id="page-perf">
         <div class="sgrid" id="p-stats"></div>
         <div class="tw"><table><thead><tr><th>Agent ID</th><th>Name</th><th>Total</th><th>Hot</th><th>Won</th><th>Conv %</th><th>Progress</th></tr></thead><tbody id="perf-body"></tbody></table></div>
       </div>
 
-      <!-- SETTINGS -->
       <div class="page" id="page-settings">
         <div style="background:var(--bg2);border:.5px solid var(--bdr);border-radius:var(--r);padding:20px;margin-bottom:16px;max-width:480px;">
           <div style="font-size:14px;font-weight:600;margin-bottom:4px;color:var(--gold)">Change Admin Password</div>
@@ -357,14 +335,13 @@ body{overflow:hidden;}
   </div>
 </div>
 
-<!-- MOBILE NAV -->
 <div class="mnav">
   <div class="mnav-inner">
     <div class="mni on" onclick="goPage('dash',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Home</div>
     <div class="mni" onclick="goPage('agents',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Agents</div>
     <div class="mni" onclick="goPage('leads',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Leads</div>
+    <div class="mni" onclick="goPage('props',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Props</div>
     <div class="mni" onclick="goPage('upload',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/></svg>Upload</div>
-    <div class="mni" onclick="goPage('perf',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Perf</div>
   </div>
 </div>
 
@@ -435,11 +412,42 @@ body{overflow:hidden;}
   </div>
 </div>
 
+<!-- PROPERTY MODAL -->
+<div class="mbg" id="p-modal">
+  <div class="modal">
+    <div class="mhdr"><div class="mtitle" id="p-modal-title">Add Property</div><button class="mx" onclick="closeModal('p-modal')">✕</button></div>
+    <div class="mbody">
+      <div class="fg"><label>Property ID</label><div class="fg-id"><input id="p-id" type="text" readonly placeholder="Click Generate"><button onclick="genPropId()">Generate</button></div></div>
+      <div class="fg2">
+        <div class="fg"><label>Project Name *</label><input id="p-name" type="text" placeholder="Eldeco Eden of Echoes"></div>
+        <div class="fg"><label>Developer</label><input id="p-dev" type="text" placeholder="Eldeco"></div>
+      </div>
+      <div class="fg2">
+        <div class="fg"><label>Location</label><input id="p-loc" type="text" placeholder="Sector 22D, Yamuna Expressway"></div>
+        <div class="fg"><label>Type</label><select id="p-type"><option>Residential</option><option>Commercial</option><option>Villa</option><option>Plot</option><option>Studio</option></select></div>
+      </div>
+      <div class="fg2">
+        <div class="fg"><label>Configuration (BHK)</label><input id="p-bhk" type="text" placeholder="3 & 4 BHK"></div>
+        <div class="fg"><label>Price Range</label><input id="p-price" type="text" placeholder="1.2 Cr - 2.5 Cr"></div>
+      </div>
+      <div class="fg2">
+        <div class="fg"><label>RERA No.</label><input id="p-rera" type="text" placeholder="UPRERAPRJ..."></div>
+        <div class="fg"><label>Status</label><select id="p-status"><option>Active</option><option>Sold Out</option><option>Coming Soon</option></select></div>
+      </div>
+      <div class="fg"><label>Description</label><textarea id="p-desc" placeholder="Key highlights, amenities..."></textarea></div>
+    </div>
+    <div class="mfoot">
+      <button class="btn-cancel" onclick="closeModal('p-modal')">Cancel</button>
+      <button class="btn-gold" onclick="saveProperty()">Save Property</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
-import { getFirestore, collection, doc, getDoc, getDocs, addDoc, updateDoc, deleteDoc, onSnapshot, query, where, orderBy, serverTimestamp, setDoc } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { getFirestore, collection, doc, getDoc, getDocs, addDoc, updateDoc, deleteDoc, onSnapshot, query, where, serverTimestamp, setDoc } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCPFXGkKnu6dfJwJNPoaM7FzEGZNgFwmLk",
@@ -453,26 +461,22 @@ const firebaseConfig = {
 const fapp = initializeApp(firebaseConfig);
 const db = getFirestore(fapp);
 
-// ── STATE ──
-let agents = [], allLeads = [];
-let editAgentId = null, editLeadId = null;
+let agents = [], allLeads = [], allProperties = [];
+let editAgentId = null, editLeadId = null, editPropId = null;
 let csvHeaders = [], csvRows = [], colMap = {};
-let unsubAgents = null, unsubLeads = null;
+let unsubAgents = null, unsubLeads = null, unsubProps = null;
 const YEAR = new Date().getFullYear();
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const AVC=['#c9a84c','#5acea0','#5aace0','#e0a040','#e05a5a','#a07ce0'];
 const AVT=['#0a0a12','#051510','#050f18','#180d00','#1a0505','#0d0520'];
+const propIcons={Residential:'🏢',Commercial:'🏬',Villa:'🏡',Plot:'🗺️',Studio:'🎨'};
 
 function ini(n){return(n||'?').trim().split(/\s+/).map(w=>w[0]).join('').toUpperCase().slice(0,2);}
 function ci(n){let h=0;for(let c of(n||'A'))h=(h*31+c.charCodeAt(0))>>>0;return h%AVC.length;}
 function fd(d){if(!d)return'-';const[y,m,day]=d.split('-');return parseInt(day)+' '+MON[parseInt(m)-1];}
-function fmtTime(t){if(!t)return'';const[h,m]=t.split(':');const hr=parseInt(h);return(hr%12||12)+':'+m+' '+(hr<12?'AM':'PM');}
 function setSyncDot(s){const d=document.getElementById('sdot'),l=document.getElementById('sync-lbl');d.className='sdot'+(s==='on'?'':s==='sync'?' sync':' off');l.textContent=s==='on'?'Live':s==='sync'?'Syncing...':'Offline';}
 
-// ── ADMIN LOGIN ──
-async function getAdminPw(){
-  try{const snap=await getDoc(doc(db,'settings','admin'));return snap.exists()?(snap.data().password||'admin1234'):'admin1234';}catch{return'admin1234';}
-}
+async function getAdminPw(){try{const snap=await getDoc(doc(db,'settings','admin'));return snap.exists()?(snap.data().password||'admin1234'):'admin1234';}catch{return'admin1234';}}
 
 window.doAdminLogin=async function(){
   const pw=document.getElementById('adm-pw').value;
@@ -485,13 +489,12 @@ window.doAdminLogin=async function(){
     errEl.classList.remove('show');
     localStorage.setItem('me_admin_session',JSON.stringify({ts:Date.now()}));
     startAdmin();
-  }catch(e){errEl.textContent='Connection error. Check internet.';errEl.classList.add('show');setSyncDot('off');}
+  }catch(e){errEl.textContent='Connection error.';errEl.classList.add('show');setSyncDot('off');}
 };
 
 window.doAdminLogout=function(){
   if(!confirm('Logout?'))return;
-  if(unsubAgents)unsubAgents();
-  if(unsubLeads)unsubLeads();
+  if(unsubAgents)unsubAgents();if(unsubLeads)unsubLeads();if(unsubProps)unsubProps();
   localStorage.removeItem('me_admin_session');
   document.getElementById('shell').classList.remove('show');
   document.getElementById('login').classList.add('show');
@@ -518,22 +521,12 @@ function startAdmin(){
   subscribeAll();
 }
 
-// ── REALTIME LISTENERS ──
 function subscribeAll(){
   setSyncDot('sync');
-  if(unsubAgents)unsubAgents();
-  if(unsubLeads)unsubLeads();
-  unsubAgents=onSnapshot(collection(db,'agents'),snap=>{
-    agents=snap.docs.map(d=>({id:d.id,...d.data()}));
-    agents.sort((a,b)=>(a.name||'').localeCompare(b.name||''));
-    refreshAll();
-  },e=>{setSyncDot('off');console.error(e);});
-  unsubLeads=onSnapshot(collection(db,'leads'),snap=>{
-    allLeads=snap.docs.map(d=>({id:d.id,...d.data()}));
-    allLeads.sort((a,b)=>(b.ts?.seconds||0)-(a.ts?.seconds||0));
-    setSyncDot('on');
-    refreshAll();
-  },e=>{setSyncDot('off');console.error(e);});
+  if(unsubAgents)unsubAgents();if(unsubLeads)unsubLeads();if(unsubProps)unsubProps();
+  unsubAgents=onSnapshot(collection(db,'agents'),snap=>{agents=snap.docs.map(d=>({id:d.id,...d.data()}));agents.sort((a,b)=>(a.name||'').localeCompare(b.name||''));refreshAll();},e=>{setSyncDot('off');console.error(e);});
+  unsubLeads=onSnapshot(collection(db,'leads'),snap=>{allLeads=snap.docs.map(d=>({id:d.id,...d.data()}));allLeads.sort((a,b)=>(b.ts?.seconds||0)-(a.ts?.seconds||0));setSyncDot('on');refreshAll();},e=>{setSyncDot('off');console.error(e);});
+  unsubProps=onSnapshot(collection(db,'properties'),snap=>{allProperties=snap.docs.map(d=>({id:d.id,...d.data()}));allProperties.sort((a,b)=>(b.ts?.seconds||0)-(a.ts?.seconds||0));refreshAll();},e=>console.error(e));
 }
 
 function refreshAll(){
@@ -541,15 +534,16 @@ function refreshAll(){
   if(cur==='dash')renderDash();
   else if(cur==='agents')renderAgents();
   else if(cur==='leads')renderAllLeads();
+  else if(cur==='props')renderProperties();
   else if(cur==='perf')renderPerf();
   else if(cur==='upload'){populateUploadDropdowns();}
 }
 
-// ── PAGE NAVIGATION ──
 const pageInfo={
   dash:{title:'Dashboard',sub:'Real-time overview — all agents & leads'},
   agents:{title:'Agents & ARMs',sub:'Manage team, generate IDs, set PINs'},
   leads:{title:'All Leads',sub:'Every lead across all agents'},
+  props:{title:'Properties',sub:'Manage listings — instantly visible in agent Field CRM'},
   upload:{title:'Upload to Agent',sub:'Bulk assign CSV leads to an agent instantly'},
   perf:{title:'Performance',sub:'Agent conversion rates & rankings'},
   settings:{title:'Settings',sub:'Admin password & data export'}
@@ -557,7 +551,7 @@ const pageInfo={
 const pageActions={
   agents:()=>'<button class="btn-gold" onclick="openAgentModal()">+ Add Agent</button>',
   leads:()=>'<button class="btn-gold" onclick="openLeadModal()">+ Add Lead</button>',
-  settings:()=>'',
+  props:()=>'<button class="btn-gold" onclick="openPropModal()">+ Add Property</button>',
   default:()=>''
 };
 window.goPage=function(name,el){
@@ -570,11 +564,10 @@ window.goPage=function(name,el){
   document.getElementById('tb-title').textContent=info.title;
   document.getElementById('tb-sub').textContent=info.sub;
   document.getElementById('tb-actions').innerHTML=(pageActions[name]||pageActions.default)();
-  const renderers={dash:renderDash,agents:renderAgents,leads:renderAllLeads,upload:()=>{populateUploadDropdowns();populateReassignDropdowns();},perf:renderPerf};
+  const renderers={dash:renderDash,agents:renderAgents,leads:renderAllLeads,props:renderProperties,upload:()=>{populateUploadDropdowns();populateReassignDropdowns();},perf:renderPerf};
   if(renderers[name])renderers[name]();
 };
 
-// ── DASHBOARD ──
 function renderDash(){
   const total=allLeads.length,won=allLeads.filter(l=>l.status==='Won').length,hot=allLeads.filter(l=>l.status==='Hot').length;
   const today=new Date().toISOString().split('T')[0],due=allLeads.filter(l=>l.followup===today).length;
@@ -585,7 +578,7 @@ function renderDash(){
     <div class="scard amber"><div class="sv">${hot}</div><div class="sl">Hot Leads</div></div>
     <div class="scard green"><div class="sv">${won}</div><div class="sl">Won · ${conv}%</div></div>
     <div class="scard red"><div class="sv">${due}</div><div class="sl">Follow-ups Today</div></div>
-    <div class="scard purple"><div class="sv">${agents.filter(a=>a.pin).length}</div><div class="sl">Agents with PIN</div></div>
+    <div class="scard purple"><div class="sv">${allProperties.length}</div><div class="sl">Properties Listed</div></div>
   `;
   const recent=allLeads.slice(0,8);
   document.getElementById('d-lead-count').textContent='('+allLeads.length+')';
@@ -594,14 +587,10 @@ function renderDash(){
   document.getElementById('d-agents').innerHTML=top.length?top.map(a=>`<tr><td><span class="idb">${a.crmId}</span></td><td><strong>${a.name}</strong></td><td style="color:var(--blue)">${a.lc}</td><td style="color:var(--green)">${a.wc}</td></tr>`).join(''):'<tr><td colspan="4" class="te">No agents yet</td></tr>';
 }
 
-// ── AGENTS ──
 window.renderAgents=function(){
   const q=(document.getElementById('a-srch').value||'').toLowerCase();
   const sf=document.getElementById('a-sf').value;
-  const filtered=agents.filter(a=>{
-    const mq=!q||a.name.toLowerCase().includes(q)||a.crmId.toLowerCase().includes(q)||(a.phone||'').includes(q);
-    return mq&&(!sf||a.status===sf);
-  });
+  const filtered=agents.filter(a=>{const mq=!q||a.name.toLowerCase().includes(q)||a.crmId.toLowerCase().includes(q)||(a.phone||'').includes(q);return mq&&(!sf||a.status===sf);});
   const grid=document.getElementById('agent-grid');
   if(!filtered.length){grid.innerHTML='<div style="color:var(--text3);text-align:center;padding:40px;grid-column:1/-1">No agents found. Add your first agent.</div>';return;}
   grid.innerHTML=filtered.map(a=>{
@@ -612,7 +601,7 @@ window.renderAgents=function(){
         <div style="flex:1;min-width:0">
           <div class="acname">${a.name}</div>
           <div class="acid">${a.crmId}</div>
-          <div class="acpin" style="color:${a.pin?'var(--green)':'var(--red)'}">${a.pin?'✓ PIN set':'✗ No PIN — cannot login'}</div>
+          <div class="acpin" style="color:${a.pin?'var(--green)':'var(--red)'}">${a.pin?'✓ PIN set':'✗ No PIN'}</div>
           <div style="margin-top:4px"><span class="sbdg sbdg-${a.status}">${a.status}</span>${a.zone?`<span style="font-size:10px;color:var(--text3);margin-left:6px">${a.zone}</span>`:''}</div>
         </div>
       </div>
@@ -629,13 +618,10 @@ window.openAgentDetail=function(id){
   const a=agents.find(x=>x.id===id);if(!a)return;
   const al=allLeads.filter(l=>l.agentId===id);
   const won=al.filter(l=>l.status==='Won').length,conv=al.length?Math.round(won/al.length*100):0;
-  const ix=ci(a.name);
-  // Show a simple modal with details + edit button
   const info=`Agent: ${a.name} (${a.crmId})\nPhone: ${a.phone||'-'}\nZone: ${a.zone||'-'}\nLeads: ${al.length} | Won: ${won} | Conv: ${conv}%\nPIN: ${a.pin?'Set':'NOT SET'}`;
   if(confirm(info+'\n\nClick OK to Edit this agent, Cancel to close.')){editAgent(id);}
 };
 
-// ── AGENT MODAL ──
 window.openAgentModal=function(){
   editAgentId=null;
   document.getElementById('a-modal-title').textContent='Add Agent';
@@ -645,22 +631,18 @@ window.openAgentModal=function(){
   document.getElementById('a-modal').classList.add('on');
   genAgentId();
 };
-
 window.editAgent=function(id){
   editAgentId=id;const a=agents.find(x=>x.id===id);
   document.getElementById('a-modal-title').textContent='Edit Agent';
   document.getElementById('a-id').value=a.crmId;document.getElementById('a-name').value=a.name||'';document.getElementById('a-phone').value=a.phone||'';document.getElementById('a-email').value=a.email||'';document.getElementById('a-zone').value=a.zone||'';document.getElementById('a-status').value=a.status||'Active';document.getElementById('a-join').value=a.join||'';document.getElementById('a-notes').value=a.notes||'';document.getElementById('a-pin').value=a.pin||'';document.getElementById('a-pin2').value=a.pin||'';
   document.getElementById('a-modal').classList.add('on');
 };
-
 window.genAgentId=async function(){
   const snap=await getDoc(doc(db,'counters','agents'));
   const cur=(snap.exists()?snap.data().count:0)+1;
   await setDoc(doc(db,'counters','agents'),{count:cur});
-  const id='AGT-'+YEAR+'-'+String(cur).padStart(3,'0');
-  document.getElementById('a-id').value=id;
+  document.getElementById('a-id').value='AGT-'+YEAR+'-'+String(cur).padStart(3,'0');
 };
-
 window.saveAgent=async function(){
   const name=document.getElementById('a-name').value.trim();
   const crmId=document.getElementById('a-id').value.trim();
@@ -675,13 +657,11 @@ window.saveAgent=async function(){
   const data={crmId,name,phone:document.getElementById('a-phone').value.trim(),email:document.getElementById('a-email').value.trim(),zone:document.getElementById('a-zone').value.trim(),status:document.getElementById('a-status').value,join:document.getElementById('a-join').value,notes:document.getElementById('a-notes').value.trim(),pin:pin||(existing?existing.pin:''),updatedAt:serverTimestamp()};
   if(!editAgentId)data.createdAt=serverTimestamp();
   try{
-    if(editAgentId){await updateDoc(doc(db,'agents',editAgentId),data);}
-    else{await addDoc(collection(db,'agents'),data);}
+    if(editAgentId){await updateDoc(doc(db,'agents',editAgentId),data);}else{await addDoc(collection(db,'agents'),data);}
     closeModal('a-modal');toast(editAgentId?'Agent updated ✓':'Agent '+crmId+' created ✓');editAgentId=null;
   }catch(e){toast('Error saving agent');console.error(e);}
 };
 
-// ── LEAD MODAL ──
 window.openLeadModal=function(){
   editLeadId=null;
   document.getElementById('l-modal-title').textContent='Add Lead';
@@ -691,15 +671,12 @@ window.openLeadModal=function(){
   document.getElementById('l-modal').classList.add('on');
   genLeadId();
 };
-
 window.genLeadId=async function(){
   const snap=await getDoc(doc(db,'counters','leads'));
   const cur=(snap.exists()?snap.data().count:0)+1;
   await setDoc(doc(db,'counters','leads'),{count:cur});
-  const id='LED-'+YEAR+'-'+String(cur).padStart(4,'0');
-  document.getElementById('lid').value=id;
+  document.getElementById('lid').value='LED-'+YEAR+'-'+String(cur).padStart(4,'0');
 };
-
 window.saveLead=async function(){
   const name=document.getElementById('l-name').value.trim();
   const crmId=document.getElementById('lid').value.trim();
@@ -709,24 +686,18 @@ window.saveLead=async function(){
   const agentObj=agents.find(a=>a.id===agentId);
   const data={crmId,name,phone:document.getElementById('l-phone').value.trim(),email:document.getElementById('l-email').value.trim(),budget:document.getElementById('l-budget').value.trim(),propInterest:document.getElementById('l-prop').value.trim(),agentId,agentName:agentObj?agentObj.name:'',agentCrmId:agentObj?agentObj.crmId:'',status:document.getElementById('l-status').value,source:document.getElementById('l-source').value,followup:document.getElementById('l-date').value,notes:document.getElementById('l-notes').value.trim(),history:[],ts:serverTimestamp()};
   try{
-    if(editLeadId){await updateDoc(doc(db,'leads',editLeadId),data);}
-    else{await addDoc(collection(db,'leads'),data);}
+    if(editLeadId){await updateDoc(doc(db,'leads',editLeadId),data);}else{await addDoc(collection(db,'leads'),data);}
     closeModal('l-modal');toast(editLeadId?'Lead updated ✓':'Lead '+crmId+' added ✓');editLeadId=null;
   }catch(e){toast('Error saving lead');console.error(e);}
 };
 
-// ── ALL LEADS ──
 window.renderAllLeads=function(){
   const q=(document.getElementById('l-srch').value||'').toLowerCase();
   const af=document.getElementById('l-af').value,sf=document.getElementById('l-sf').value;
-  const agentSel=document.getElementById('l-af');
-  const cv=agentSel.value;
+  const agentSel=document.getElementById('l-af');const cv=agentSel.value;
   agentSel.innerHTML='<option value="">All Agents</option>'+agents.map(a=>`<option value="${a.id}">${a.name} (${a.crmId})</option>`).join('');
   agentSel.value=cv;
-  const filtered=allLeads.filter(l=>{
-    const mq=!q||l.name.toLowerCase().includes(q)||(l.phone||'').includes(q)||(l.crmId||'').toLowerCase().includes(q);
-    return mq&&(!af||l.agentId===af)&&(!sf||l.status===sf);
-  });
+  const filtered=allLeads.filter(l=>{const mq=!q||l.name.toLowerCase().includes(q)||(l.phone||'').includes(q)||(l.crmId||'').toLowerCase().includes(q);return mq&&(!af||l.agentId===af)&&(!sf||l.status===sf);});
   document.getElementById('all-leads').innerHTML=filtered.length?filtered.map(l=>{
     const a=agents.find(x=>x.id===l.agentId);
     return`<tr>
@@ -740,16 +711,87 @@ window.renderAllLeads=function(){
     </tr>`;
   }).join(''):'<tr><td colspan="7" class="te">No leads found.</td></tr>';
 };
+window.deleteLeadAdmin=async function(id){if(!confirm('Delete this lead?'))return;await deleteDoc(doc(db,'leads',id));toast('Lead deleted');};
 
-window.deleteLeadAdmin=async function(id){
-  if(!confirm('Delete this lead?'))return;
-  await deleteDoc(doc(db,'leads',id));toast('Lead deleted');
+// ── PROPERTIES ──
+window.renderProperties=function(){
+  const q=(document.getElementById('p-srch')?.value||'').toLowerCase();
+  const tf=document.getElementById('p-tf')?.value||'';
+  const filtered=allProperties.filter(p=>{
+    const mq=!q||p.name.toLowerCase().includes(q)||(p.location||'').toLowerCase().includes(q)||(p.developer||'').toLowerCase().includes(q);
+    return mq&&(!tf||p.type===tf);
+  });
+  const grid=document.getElementById('prop-grid');
+  if(!grid)return;
+  if(!filtered.length){grid.innerHTML='<div style="color:var(--text3);text-align:center;padding:40px;grid-column:1/-1">No properties yet. Add your first listing — it will appear instantly in every agent\\'s Field CRM.</div>';return;}
+  grid.innerHTML=filtered.map(p=>{
+    const icon=propIcons[p.type]||'🏢';
+    const leadCount=allLeads.filter(l=>(l.propInterest||'').toLowerCase().includes(p.name.toLowerCase())).length;
+    const statusKey=(p.status||'Active').replace(/\s/g,'');
+    return`<div class="pcard" onclick="editProperty('${p.id}')">
+      <div class="pbanner">${icon}<span class="pbtag">${p.crmId||''}</span></div>
+      <div class="pbody">
+        <div class="pname">${p.name}</div>
+        ${p.developer?`<div class="pdev">by ${p.developer}</div>`:''}
+        ${p.location?`<div class="ploc">📍 ${p.location}</div>`:''}
+        <div class="pfoot">
+          <div class="pprice">${p.price||'On request'}</div>
+          <span class="sbdg sbdg-${statusKey}">${p.status||'Active'}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 };
 
-// ── UPLOAD TO AGENT ──
-function populateUploadDropdowns(){
-  document.getElementById('up-agent').innerHTML='<option value="">-- Choose Agent --</option>'+agents.map(a=>`<option value="${a.id}">${a.name} (${a.crmId})</option>`).join('');
-}
+window.openPropModal=function(){
+  editPropId=null;
+  document.getElementById('p-modal-title').textContent='Add Property';
+  ['p-name','p-dev','p-loc','p-bhk','p-price','p-rera','p-desc'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('p-id').value='';document.getElementById('p-type').value='Residential';document.getElementById('p-status').value='Active';
+  document.getElementById('p-modal').classList.add('on');
+  genPropId();
+};
+window.editProperty=function(id){
+  editPropId=id;const p=allProperties.find(x=>x.id===id);if(!p)return;
+  document.getElementById('p-modal-title').textContent='Edit Property';
+  document.getElementById('p-id').value=p.crmId||'';
+  document.getElementById('p-name').value=p.name||'';
+  document.getElementById('p-dev').value=p.developer||'';
+  document.getElementById('p-loc').value=p.location||'';
+  document.getElementById('p-type').value=p.type||'Residential';
+  document.getElementById('p-bhk').value=p.bhk||'';
+  document.getElementById('p-price').value=p.price||'';
+  document.getElementById('p-rera').value=p.rera||'';
+  document.getElementById('p-status').value=p.status||'Active';
+  document.getElementById('p-desc').value=p.description||'';
+  document.getElementById('p-modal').classList.add('on');
+};
+window.genPropId=async function(){
+  const snap=await getDoc(doc(db,'counters','properties'));
+  const cur=(snap.exists()?snap.data().count:0)+1;
+  await setDoc(doc(db,'counters','properties'),{count:cur});
+  document.getElementById('p-id').value='PRJ-'+YEAR+'-'+String(cur).padStart(3,'0');
+};
+window.saveProperty=async function(){
+  const name=document.getElementById('p-name').value.trim();
+  const crmId=document.getElementById('p-id').value.trim();
+  if(!name){toast('Enter project name');return;}
+  if(!crmId){toast('Generate a Property ID');return;}
+  const data={crmId,name,developer:document.getElementById('p-dev').value.trim(),location:document.getElementById('p-loc').value.trim(),type:document.getElementById('p-type').value,bhk:document.getElementById('p-bhk').value.trim(),price:document.getElementById('p-price').value.trim(),rera:document.getElementById('p-rera').value.trim(),status:document.getElementById('p-status').value,description:document.getElementById('p-desc').value.trim(),ts:serverTimestamp()};
+  try{
+    if(editPropId){await updateDoc(doc(db,'properties',editPropId),data);}else{await addDoc(collection(db,'properties'),data);}
+    closeModal('p-modal');toast(editPropId?'Property updated ✓':'Property '+crmId+' added — visible to all agents now ✓');editPropId=null;
+  }catch(e){toast('Error saving property');console.error(e);}
+};
+window.deleteProperty=async function(id){
+  if(!confirm('Delete this property? It will disappear from all agents\\' Field CRM.'))return;
+  await deleteDoc(doc(db,'properties',id));closeModal('p-modal');toast('Property deleted');
+};
+
+// Add delete button dynamically inside the modal footer when editing
+const origCloseModal=window.closeModal;
+
+function populateUploadDropdowns(){document.getElementById('up-agent').innerHTML='<option value="">-- Choose Agent --</option>'+agents.map(a=>`<option value="${a.id}">${a.name} (${a.crmId})</option>`).join('');}
 function populateReassignDropdowns(){
   document.getElementById('re-lead').innerHTML='<option value="">-- Choose Lead --</option>'+allLeads.map(l=>`<option value="${l.id}">${l.crmId||'?'} — ${l.name}</option>`).join('');
   document.getElementById('re-agent').innerHTML='<option value="">-- Choose Agent --</option>'+agents.map(a=>`<option value="${a.id}">${a.name} (${a.crmId})</option>`).join('');
@@ -759,40 +801,31 @@ window.upDragOver=function(e){e.preventDefault();document.getElementById('upbox'
 window.upDragLeave=function(){document.getElementById('upbox').classList.remove('drag');};
 window.upDrop=function(e){e.preventDefault();window.upDragLeave();upProcessFile(e.dataTransfer.files[0]);};
 window.upHandleFile=function(e){upProcessFile(e.target.files[0]);};
-
 function parseCSVLine(line){const r=[];let cur='',inQ=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'){inQ=!inQ;}else if(c===','&&!inQ){r.push(cur.trim());cur='';}else cur+=c;}r.push(cur.trim());return r;}
-
 function upProcessFile(file){
   if(!file)return;
   const reader=new FileReader();
   reader.onload=e=>{
     const lines=e.target.result.split(/\r?\n/).filter(l=>l.trim());
     if(lines.length<2){toast('File too small');return;}
-    csvHeaders=parseCSVLine(lines[0]);
-    csvRows=lines.slice(1).filter(l=>l.trim()).map(parseCSVLine);
-    colMap={};
-    const fields=['name','phone','email','budget','prop','notes'];
+    csvHeaders=parseCSVLine(lines[0]);csvRows=lines.slice(1).filter(l=>l.trim()).map(parseCSVLine);
+    colMap={};const fields=['name','phone','email','budget','prop','notes'];
     fields.forEach(f=>{const idx=csvHeaders.findIndex(h=>h.toLowerCase().includes(f)||(f==='name'&&h.toLowerCase().includes('client'))||(f==='phone'&&(h.toLowerCase().includes('mobile')||h.toLowerCase().includes('number'))));if(idx>=0)colMap[f]=idx;});
-    document.getElementById('up-col-map').innerHTML='<div style="font-size:11px;color:var(--text2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">Map Columns</div>'+
-      fields.map(f=>`<div style="display:grid;grid-template-columns:80px 1fr;gap:8px;margin-bottom:7px;align-items:center"><label style="font-size:12px;color:var(--text2)">${f.charAt(0).toUpperCase()+f.slice(1)}</label><select id="cm-${f}" style="background:var(--bg3);border:.5px solid var(--bdr);border-radius:var(--rs);padding:6px 10px;color:var(--text);font-size:12px;outline:none;-webkit-appearance:none;"><option value="-1">Skip</option>${csvHeaders.map((h,i)=>`<option value="${i}"${colMap[f]===i?' selected':''}>${h}</option>`).join('')}</select></div>`).join('');
+    document.getElementById('up-col-map').innerHTML='<div style="font-size:11px;color:var(--text2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">Map Columns</div>'+fields.map(f=>`<div style="display:grid;grid-template-columns:80px 1fr;gap:8px;margin-bottom:7px;align-items:center"><label style="font-size:12px;color:var(--text2)">${f.charAt(0).toUpperCase()+f.slice(1)}</label><select id="cm-${f}" style="background:var(--bg3);border:.5px solid var(--bdr);border-radius:var(--rs);padding:6px 10px;color:var(--text);font-size:12px;outline:none;-webkit-appearance:none;"><option value="-1">Skip</option>${csvHeaders.map((h,i)=>`<option value="${i}"${colMap[f]===i?' selected':''}>${h}</option>`).join('')}</select></div>`).join('');
     const prev=csvRows.slice(0,5);
     document.getElementById('up-table').innerHTML='<table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr>'+csvHeaders.map(h=>`<th style="background:var(--bg3);padding:7px 10px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--text2);border-bottom:.5px solid var(--bdr)">${h}</th>`).join('')+'</tr></thead><tbody>'+prev.map(r=>`<tr>${r.map(c=>`<td style="padding:7px 10px;border-bottom:.5px solid var(--bdr)">${c||''}</td>`).join('')}</tr>`).join('')+'</tbody></table><div style="font-size:11px;color:var(--text3);margin-top:5px">Showing '+prev.length+' of '+csvRows.length+' rows</div>';
-    document.getElementById('up-preview').style.display='block';
-    document.getElementById('up-result').style.display='none';
+    document.getElementById('up-preview').style.display='block';document.getElementById('up-result').style.display='none';
   };
   reader.readAsText(file,'UTF-8');
 }
-
 window.doUpload=async function(){
   const agentId=document.getElementById('up-agent').value;
   if(!agentId){toast('Select an agent first');return;}
   const agent=agents.find(a=>a.id===agentId);
   ['name','phone','email','budget','prop','notes'].forEach(f=>{const el=document.getElementById('cm-'+f);if(el)colMap[f]=parseInt(el.value);});
-  const followup=document.getElementById('up-date').value;
-  const ftime=document.getElementById('up-time').value;
+  const followup=document.getElementById('up-date').value,ftime=document.getElementById('up-time').value;
   const btn=document.querySelector('#page-upload .btn-sv');btn.textContent='Uploading...';btn.disabled=true;
   let imported=0,skipped=0;
-  // Get current lead counter
   const counterSnap=await getDoc(doc(db,'counters','leads'));
   let counter=counterSnap.exists()?counterSnap.data().count:0;
   const batch=[];
@@ -800,7 +833,6 @@ window.doUpload=async function(){
     const name=colMap.name>=0?(row[colMap.name]||''):'';
     if(!name.trim()){skipped++;continue;}
     const phone=colMap.phone>=0?(row[colMap.phone]||'').trim():'';
-    // Skip duplicate phone
     if(phone&&allLeads.find(l=>l.phone&&l.phone.replace(/\s/g,'')===phone.replace(/\s/g,''))){skipped++;continue;}
     counter++;
     const crmId='LED-'+YEAR+'-'+String(counter).padStart(4,'0');
@@ -810,25 +842,20 @@ window.doUpload=async function(){
   try{
     await Promise.all(batch.map(d=>addDoc(collection(db,'leads'),d)));
     await setDoc(doc(db,'counters','leads'),{count:counter});
-    document.getElementById('up-result').textContent=`✓ ${imported} leads uploaded to ${agent.name} (${agent.crmId})${skipped?` · ${skipped} skipped (duplicates/empty)`:''}. They appear instantly in the agent's Field CRM on any device.`;
-    document.getElementById('up-result').style.display='block';
-    document.getElementById('up-preview').style.display='none';
-    csvHeaders=[];csvRows=[];
-    toast(imported+' leads sent to '+agent.name);
+    document.getElementById('up-result').textContent=`✓ ${imported} leads uploaded to ${agent.name} (${agent.crmId})${skipped?` · ${skipped} skipped`:''}. They appear instantly in the agent's Field CRM.`;
+    document.getElementById('up-result').style.display='block';document.getElementById('up-preview').style.display='none';
+    csvHeaders=[];csvRows=[];toast(imported+' leads sent to '+agent.name);
   }catch(e){toast('Upload failed. Check connection.');console.error(e);}
   btn.textContent='📤 Upload to Agent';btn.disabled=false;
 };
-
 window.doReassign=async function(){
   const lid=document.getElementById('re-lead').value,aid=document.getElementById('re-agent').value;
   if(!lid||!aid){toast('Select both a lead and an agent');return;}
   const agent=agents.find(a=>a.id===aid);
   await updateDoc(doc(db,'leads',lid),{agentId:aid,agentName:agent.name,agentCrmId:agent.crmId});
-  toast('Lead reassigned to '+agent.name+' ✓');
-  populateReassignDropdowns();
+  toast('Lead reassigned to '+agent.name+' ✓');populateReassignDropdowns();
 };
 
-// ── PERFORMANCE ──
 function renderPerf(){
   const total=allLeads.length,won=allLeads.filter(l=>l.status==='Won').length,conv=total?Math.round(won/total*100):0;
   document.getElementById('p-stats').innerHTML=`
@@ -848,7 +875,6 @@ function renderPerf(){
   </tr>`).join(''):'<tr><td colspan="7" class="te">No agents added yet.</td></tr>';
 }
 
-// ── UTILS ──
 window.copyId=function(id){navigator.clipboard.writeText(id).then(()=>toast('Copied: '+id)).catch(()=>toast(id));};
 window.closeModal=function(id){document.getElementById(id).classList.remove('on');};
 document.querySelectorAll('.mbg').forEach(bg=>bg.addEventListener('click',e=>{if(e.target===bg)bg.classList.remove('on');}));
@@ -859,7 +885,6 @@ window.exportLeads=function(){
   const csv=[headers.join(','),...rows.map(r=>r.join(','))].join('\n');
   const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download='me-leads-'+new Date().toISOString().split('T')[0]+'.csv';a.click();toast('Leads CSV exported');
 };
-
 window.exportAgents=function(){
   const headers=['Agent ID','Name','Phone','Email','Zone','Status','PIN Set'];
   const rows=agents.map(a=>[a.crmId,a.name,a.phone,a.email,a.zone,a.status,a.pin?'Yes':'No'].map(v=>`"${(v||'').replace(/"/g,'""')}"`));
@@ -869,7 +894,6 @@ window.exportAgents=function(){
 
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2800);}
 
-// ── INIT ──
 const sess=JSON.parse(localStorage.getItem('me_admin_session')||'null');
 if(sess&&Date.now()-sess.ts<24*60*60*1000){startAdmin();}
 else{document.getElementById('splash').classList.add('hide');document.getElementById('login').classList.add('show');}

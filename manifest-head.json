@@ -1,7 +1,7 @@
 {
   "name": "Mahendra Estates Head CRM",
   "short_name": "ME Head",
-  "description": "Head Office CRM — Agents, Leads & Performance",
+  "description": "Head Office CRM — Agents, Leads, Properties & Performance",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0a0a12",
