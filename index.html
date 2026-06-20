@@ -723,7 +723,7 @@ window.renderProperties=function(){
   });
   const grid=document.getElementById('prop-grid');
   if(!grid)return;
-  if(!filtered.length){grid.innerHTML='<div style="color:var(--text3);text-align:center;padding:40px;grid-column:1/-1">No properties yet. Add your first listing — it will appear instantly in every agent\\'s Field CRM.</div>';return;}
+  if(!filtered.length){grid.innerHTML='<div style="color:var(--text3);text-align:center;padding:40px;grid-column:1/-1">No properties yet. Add your first listing — it will appear instantly in every agent&#39;s Field CRM.</div>';return;}
   grid.innerHTML=filtered.map(p=>{
     const icon=propIcons[p.type]||'🏢';
     const leadCount=allLeads.filter(l=>(l.propInterest||'').toLowerCase().includes(p.name.toLowerCase())).length;
@@ -784,7 +784,7 @@ window.saveProperty=async function(){
   }catch(e){toast('Error saving property');console.error(e);}
 };
 window.deleteProperty=async function(id){
-  if(!confirm('Delete this property? It will disappear from all agents\\' Field CRM.'))return;
+  if(!confirm("Delete this property? It will disappear from all agents' Field CRM."))return;
   await deleteDoc(doc(db,'properties',id));closeModal('p-modal');toast('Property deleted');
 };
 
